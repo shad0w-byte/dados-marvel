@@ -2,7 +2,7 @@
 
 O site <b>Dados Marvel</b> é um site de busca de dados construido em Next js juntamente com a Marvel Api, você pode buscar dados de personagens, HQs e muito mais!
 
-<img src="./thumbnail.png" alt="thumbnail" min-width="400px" max-width="500px">
+
 
 ## Requisitos... :computer:
 
