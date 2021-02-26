@@ -33,7 +33,7 @@ export default function navbar() {
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav>
                 <Nav.Link href="https://developer.marvel.com/" target="_blank" rel="noreferrer">API</Nav.Link>
-                <Nav.Link href="https://github.com/victor-kiss/test-marvel-data.git" rel="noreferrer">Reposiório</Nav.Link>
+                <Nav.Link href="https://github.com/victor-kiss/dados-marvel.git" rel="noreferrer">Reposiório</Nav.Link>
             </Nav>
         </Navbar.Collapse>
         </Navbar>
