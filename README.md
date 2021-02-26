@@ -6,8 +6,7 @@ O site <b>Dados Marvel</b> é um site de busca de dados construido em Next js ju
 
 ## Requisitos... :computer:
 
--Node js
--Um editor de código ou IDE para executar o projeto e modificá-lo
+-Node js e um editor de código ou IDE para executar o projeto e modificá-lo
 
 
 ## Começando ☕
