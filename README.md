@@ -1,8 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Dados Marvel
 
-## Getting Started
+O site <b>Dados Marvel</b> é um site de busca de dados construido em Next js juntamente com a Marvel Api, você pode buscar dados de personagens, HQs e muito mais!
 
-First, run the development server:
+<img src="./thumbnail.png" alt="thumbnail" min-width="400px" max-width="500px">
+
+## Requisitos... :computer:
+
+-Node js
+-Um editor de código ou IDE para executar o projeto e modificá-lo
+
+
+## Começando ☕
+
+Primeiramente baixe o projeto e execute-o usando:
 
 ```bash
 npm run dev
@@ -10,25 +20,44 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navetador para ver os resultados.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Você pode começar a modificar o projeto por onde quiser, um bom começo é modificar o: `pages/index.js`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Por dentro do projeto :open_file_folder:
 
-## Learn More
+Vamos conhecer um pouco sobre a organização de pastas do projeto e seus arquivos...
 
-To learn more about Next.js, take a look at the following resources:
+## Pasta "assets"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+É a pasta responsável pelos arquivos estáticos, dentro dessa pasta a pasta "images" que contém todas as imagens do site e a logo da marvel em svg.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Pasta "cards"
 
-## Deploy on Vercel
+Como o próprio nome sugere, essa pasta é a responsável por agrupar os cards que contém os dados vindo das requisições feitas a api. Cada card possui sua pasta com o arquivo do card e o arquivo "DropdownData" que varia de acordo com o card, por isso cada card possui seu arquivo de forma isolada.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Pasta "components"
+
+A pasta responsável pelos componentes do site, cada componente possui sua pasta com o arquivo .jsx e o "style.js" responsável pelo estilo do componente.
+
+## Pasta "data"
+
+Dentro da pasta "data" fica os arquivos com dados da api, cada arquivo é responsável por fazer uma requisição e renderizar um componente.
+
+## Pasta "pages"
+
+Essa pasta contém a página principal "index.jsx" e o arquivo "_document", responsável pelo Server Side Redenring do styled-components e o arquivo "app"
+
+## Pasta "patterns"
+
+Dentro dessa pasta fica arquivos reutilizáveis, esses arquivos são elementos HTML com um estilo já pré definido e outras coisas são adaptáveis através do uso de props. Para entender melhor como esses arquivos funcionam basta dar uma olhada em como cada um deles foi programado.
+
+## pasta "styles"
+
+Pasta responsável por conter o css global e o css dos inputs e botões do site.
+
+## Observação :eyes:
+
+Para que o projeto funcione corretamente em sua máquina local é necessário ter uma chave API da Marvel e um hash que é o md5 do ts + privateKey + publicKey. Esses dados devem estar dentro de um arquivo ".env", é necessário que o nome das variáveis de ambiente comecem com "NEXT_PUBLIC".
