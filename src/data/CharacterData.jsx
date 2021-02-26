@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
 
-import CharacterCard from '../cards/characterCard/characterCard'
+import CharacterCard from '../cards/characterCard/CharacterCard'
 
 
 import InputArea from '../styles/input'
